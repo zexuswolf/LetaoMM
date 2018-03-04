@@ -2,6 +2,8 @@ package com.letao.mm2;
 
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.context.annotation.PropertySource;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringRunner;
 import org.springframework.test.context.web.WebAppConfiguration;
@@ -25,6 +27,8 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 
 @RunWith(SpringRunner.class)
 @ContextConfiguration(classes = App.class)
+@SpringBootTest
+//@PropertySource("file:/D:/MyRepo/Local_Letao_MM_Repo/Letao_MM/src/main/resources/application.properties")
 @WebAppConfiguration
 public class RestStepDefs {
 	
